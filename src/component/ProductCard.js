@@ -14,7 +14,7 @@ const ProductCard = ({ item }) => {
 			<div>{item.title}</div>
 			<div>{item.price}</div>
 			<div>{item?.new === true ? 'New Arrival' : ''}</div>
-			<div class='choice'>
+			<div className='choice'>
 				{item?.choice === true ? 'Conscious choice' : ''}
 			</div>
 		</div>

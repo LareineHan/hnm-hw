@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import { Container } from 'react-bootstrap';
 import '../styles/Signup.css';
 
-const Signup = () => {
+const Signup = ({ setAuthenticate }) => {
 	const navigate = useNavigate();
 	const modalElement = document.querySelector('body > div.modal');
 	if (modalElement) {
@@ -15,6 +15,7 @@ const Signup = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		navigate('/');
+		setAuthenticate(true);
 		console.log('signed up!');
 	};
 	return (

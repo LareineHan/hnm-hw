@@ -30,7 +30,12 @@ function App() {
 					}></Route>
 				<Route
 					path='/signup'
-					element={<Signup setAuthenticate={setAuthenticate} />}></Route>
+					element={
+						<Signup
+							setAuthenticate={setAuthenticate}
+							authenticate={authenticate}
+						/>
+					}></Route>
 				<Route
 					path='/product/:id'
 					element={<PrivateRoute authenticate={authenticate} />}></Route>

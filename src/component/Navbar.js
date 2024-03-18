@@ -62,7 +62,9 @@ const Navbar = ({ setAuthenticate, authenticate }) => {
 		setShow(false);
 	};
 
-	const handleLogout = () => {
+	const handleLogout = (e) => {
+		e.preventDefault();
+		navigate('/');
 		setAuthenticate(false);
 	};
 
@@ -118,10 +120,12 @@ const Navbar = ({ setAuthenticate, authenticate }) => {
 				</div>
 			) : (
 				// authenticate true일 때만 실행
-				<div className='logout-btn' onClick={handleLogout}>
+				<Form className='logout-btn' onSubmit={(e) => handleLogout(e)}>
 					<FontAwesomeIcon icon={faUser} />
-					<div className='login-text'>Logout</div>
-				</div>
+					<button className='logout-text' type='submit'>
+						Logout
+					</button>
+				</Form>
 			)}
 
 			<div className='nav-section'>

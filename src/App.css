@@ -22,10 +22,16 @@ div {
 }
 .logout-btn:hover {
   font-weight: bold;
-
+}
+.logout-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  color: red;
 }
 .logout-text{
-  margin-left: 7px;
+  margin-left: 0px;
   font-size: medium;
 
 }
