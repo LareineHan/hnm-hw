@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* Nav bar */
+div {
+  font-family: 'Roboto', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-btn {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  margin: 30px;
+  cursor: pointer;
+}
+.login-btn:hover {
+  font-weight: bold;
+}
+.logout-btn{
+  display: flex;
+  color: red;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+  cursor: pointer !important;
+}
+.logout-btn:hover {
+  font-weight: bold;
+
+}
+.logout-text{
+  margin-left: 7px;
+  font-size: medium;
+
+}
+.login-text {
+  margin-left: 7px;
+  font-size: medium;
+}
+.nav-section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative; /* Add position relative */
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.menu-list li {
+  margin: 0 17px;
+  cursor: pointer;
+  font-weight: regular;
+  font-size: 0.97rem; 
+}
+.menu-list li:hover {
+  transform: scale(1.1);
+}
+.search-bar {
+  position: absolute;
+  /* locate this to the right edge */
+  right: 0;
+  margin: 15px;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+.search-bar svg {
+  cursor: pointer;
+}
+.search-bar svg:hover {
+ transform: scale(1.1);
+}
+.search-bar input {
+  width: 180px;
+  border: none; /* Remove the border */
+  border-bottom: 1px solid #000; /* Add a bottom border */
+  margin-left: 5px;
+}
+.search-bar input:focus {
+  outline: none; /* Remove the outline */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.each-product-container{
+  margin: 2rem;
+  cursor: pointer;
+}
+.each-product-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.product-img {
+  background-image: cover;
+  width: 100%;
+}
+.choice{
+  font-family: monospace;
+  font-size: small;
+  color: purple;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .logo{
+    width: 60px;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative; /* Add position relative */
   }
+  .menu-container ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .nav-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
+  .search-bar {
+    position:static; /* Remove absolute positioning */
+    margin-top: 30px; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: block; /* Display search-bar as a block element */
+  }
+  .search-bar input {
+    width: 300px;}
 }
