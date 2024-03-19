@@ -8,7 +8,6 @@ import Navbar from './component/Navbar';
 import PrivateRoute from './route/PrivateRoute';
 
 function App() {
-	const [selectedProduct, setSelectedProduct] = useState([]);
 	const [authenticate, setAuthenticate] = useState(false);
 
 	useEffect(() => {
@@ -21,13 +20,7 @@ function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={
-						<Products
-							authenticate={authenticate}
-							selectedProduct={selectedProduct}
-							setSelectedProduct={setSelectedProduct}
-						/>
-					}></Route>
+					element={<Products authenticate={authenticate} />}></Route>
 				<Route
 					path='/signup'
 					element={
