@@ -9,7 +9,7 @@ const Products = () => {
 	const getProducts = async () => {
 		let searchQuery = query.get('q') || '';
 		console.log('searchQuery ?? ', searchQuery);
-		let url = `http://localhost:5000/products?q=${searchQuery}`;
+		let url = `https://my-json-server.typicode.com/lareinehan/hnm-hw/products?q=${searchQuery}`;
 		let res = await fetch(url);
 		let data = await res.json();
 		setProductList(data); // setProductList에 data를 넣어준다.

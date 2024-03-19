@@ -12,7 +12,7 @@ const ProductDetail = () => {
 	let isChoice = data.choice;
 	let sizeOptions = data.size;
 	const getProductDetail = async () => {
-		let url = `http://localhost:5000/products/${id}`;
+		let url = `https://my-json-server.typicode.com/lareinehan/hnm-hw/products/${id}`;
 		let res = await fetch(url);
 		let data = await res.json();
 		setData(data);
