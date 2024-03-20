@@ -144,6 +144,7 @@ ul {
       position: fixed; 
       left:0;
       padding: 20px;
+      color: rgb(34, 34, 34)
     }
   
     .mobile-close {
@@ -262,6 +263,7 @@ ul {
     position: fixed; 
     left:0;
     padding: 20px;
+    color: rgb(34, 34, 34);
   }
 
   .mobile-close {
@@ -378,6 +380,7 @@ ul {
         position: fixed; 
         left:0;
         padding: 20px;
+        color:rgb(34, 34, 34);
       }
       .logo{
         width: 70px;
@@ -475,6 +478,7 @@ ul {
     position: fixed; 
     left:0;
     padding: 20px;
+    color: rgb(34, 34, 34);
   }
 
   .mobile-close {
