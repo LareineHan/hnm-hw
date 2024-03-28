@@ -5,6 +5,7 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 margin-top: 4rem;
+margin-bottom: 4rem;
 }
 .detail-product-img {
     display: flex;
@@ -52,7 +53,6 @@ margin-top: 4rem;
 
 @media screen and (max-width: 1200px) {
     .detail-product-container {
-        margin: auto;
         flex-direction: column;
         align-items: center;
     }

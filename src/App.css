@@ -27,7 +27,7 @@ div {
 }
 .logout-btn{
   display: flex;
-  color: red;
+  color: #cc071e;
   justify-content: flex-end;
   align-items: center;
   cursor: pointer !important;
@@ -40,7 +40,7 @@ div {
   border: none;
   font-size: medium;
   font-weight: bold;
-  color: red;
+  color: #cc071e;
 }
 .logout-text{
   margin-left: 0px;
@@ -78,7 +78,7 @@ div {
 }
 .menu li:hover{
     text-decoration: underline;
-    color:rgb(175, 0, 0);
+    color:#cc071e;
 }
 
 ul {
@@ -111,11 +111,12 @@ ul {
   outline: none; /* Remove the outline */
 }
 
-
+.each-product-container div {
+  text-align: center;
+}
 .each-product-container{
   margin: 2rem;
   cursor: pointer;
-
 }
 
 .product-img {
@@ -123,10 +124,31 @@ ul {
   width: 100%;
 }
 .product-img:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
   transition: transform 0.5s;
 }
+.item-title{
+  padding: 0.5rem 0 0 0;
+  font-weight: bold;
+}
+.item-price{
+  margin: 3px 0 3px 0;
+  font-style: italic;
+}
+
+.isnew {
+  margin: auto;
+  color:white;
+  font-family:monospace;
+  font-size:small;
+  width: 180px;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: #cc071e;
+  font-weight: bold;
+}
 .choice{
+  margin-top: 0.5rem;
   font-family: monospace;
   font-size: small;
   color: purple;
@@ -186,7 +208,7 @@ ul {
       overflow: scroll;
       height: 100%;
       background: #000000d6;
-      box-shadow: 10px 10px rgb(175, 0, 0);
+      box-shadow: 10px 10px #cc071e;
     }
   
     .Log-btn {
@@ -310,7 +332,7 @@ ul {
     background: #000000d6;
     transform: translateX(-180px) translateY(-100); 
     transition: transform ease-in-out 0.2s;
-    box-shadow: 10px 10px rgb(175, 0, 0);
+    box-shadow: 10px 10px #cc071e;
   }
 
   .Log-btn {
@@ -531,7 +553,7 @@ ul {
     overflow: scroll;
     height: 100%;
     background: #2f2c2cf9;
-    box-shadow: 10px 10px rgb(175, 0, 0);
+    box-shadow: 10px 10px #cc071e;
   }
 
   .Log-btn {
