@@ -6,7 +6,7 @@ import Products from './page/Products';
 import Signup from './page/Signup';
 import Navbar from './component/Navbar';
 import PrivateRoute from './route/PrivateRoute';
-
+import Footer from './component/Footer';
 function App() {
 	const [authenticate, setAuthenticate] = useState(false);
 
@@ -33,6 +33,7 @@ function App() {
 					path='/product/:id'
 					element={<PrivateRoute authenticate={authenticate} />}></Route>
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

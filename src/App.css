@@ -64,6 +64,7 @@ div {
 .menu{
   display: flex;
   justify-content: center;
+  padding-top: 1rem;
   margin: 0 17px;
   cursor: pointer;
   font-weight: regular;
@@ -72,11 +73,12 @@ div {
 .menu li {
   margin: 0 17px;
   cursor: pointer;
-  font-weight: regular;
+  font-weight: bold;
   font-size: 0.97rem; 
 }
 .menu li:hover{
-    transform: scale(1.1);
+    text-decoration: underline;
+    color:rgb(175, 0, 0);
 }
 
 ul {
@@ -88,6 +90,7 @@ ul {
 }
 .search-bar {
   position: absolute;
+  padding-top: 1rem;
   right:0;
   top: 0;
   margin: 8.7rem 2rem 0 0;
@@ -193,12 +196,15 @@ ul {
     }  
    
     .login-text {
-      font-size: 1.5rem; 
+      font-size: 1.1rem; 
     }
     button.logout-text {
-      font-size: 1.5rem; 
+      font-size: 1.1rem; 
     }
-    .fa-user, .fa-magnifying-glass {
+    .fa-user {
+      font-size: 1.1rem;
+    }
+    .fa-magnifying-glass {
       margin-right: 1rem;
       font-size: 1.8rem;
     }
@@ -314,12 +320,15 @@ ul {
   }  
  
   .login-text {
-    font-size: 2rem; 
+    font-size: 1.1rem; 
   }
   button.logout-text {
-    font-size: 2rem; 
+    font-size: 1.1rem; 
   }
-  .fa-user, .fa-magnifying-glass {
+  .fa-user{
+    font-size: 1.1rem;
+  }
+  .fa-magnifying-glass {
     margin-right: 2rem;
     font-size: 3rem;
   }
@@ -420,10 +429,14 @@ ul {
         margin: 25px 0px 15px 25px;
       }  
      
-      .login-text , .logout-text, .fa-user,.fa-magnifying-glass {
-        font-size: 1.7em; 
+      .login-text , .logout-text {
+        font-size: 1.2rem;
       }
-      .fa-user, .fa-magnifying-glass {
+      .fa-user {
+        font-size: 1.2rem;
+        margin-right: 10px;
+      }
+      .fa-magnifying-glass {
         margin-right: 10px;
         font-size: 2em;
       }
@@ -527,7 +540,7 @@ ul {
     margin: 2rem 0px 1rem 1rem;
   }  
   .login-text , .logout-text, .fa-user,.fa-magnifying-glass {
-    font-size: 2rem; 
+    font-size: 1rem; 
   }
   .fa-user, .fa-magnifying-glass {
     margin-right: 1rem;
