@@ -517,7 +517,7 @@ ul {
     color: rgb(34, 34, 34);
   }
   .toggle-area svg {
-    padding-right: 3rem;
+    padding-right: 1rem;
   }
 
   .menu-container {
@@ -555,7 +555,7 @@ ul {
     z-index: 2; /* positioning above the menu */
     top: 0;
     right: 0;
-    margin-right: 3.5rem;
+    margin-right: 2rem;
     margin-top: 0.7rem;
     font-size: 3rem;
     cursor: pointer;
